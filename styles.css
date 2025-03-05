@@ -1,0 +1,89 @@
+#headerdiv {
+  padding:20px 0px 7px 20px;
+  height:120px;
+  background-image:url('https://yt3.googleusercontent.com/udc9B7vULz_HMpxSIbBLlTiQOa6XCDvDsPAfS3aSlSs93vgjwXuJ_PQnOAOFOuLnU-1IagIX=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj');
+}
+
+#bodydiv {
+  color:white;
+  float:left;
+  width:75%;
+}
+
+#body1div {
+  padding:1px 35px 0px 35px;
+  background-color:#1A1A1A;
+  height:1000px;
+}
+
+h2 {letter-spacing:5px;
+  
+}
+
+h4 {letter-spacing:1px;
+  
+}
+
+p {color:white;
+  font-family:calibri light;
+  line-height:1.4;
+}
+
+
+h4 {color:#B68354;
+    font-family:calibri light;
+    text-decoration:underline;
+}
+
+#artist {margin:25px 0px 0px;
+  
+}
+
+#asidediv {
+  float:right;
+  background-color:black;
+  width:25%;
+  height:1104px;
+}
+
+ol {list-style-type:upper-roman;
+  
+}
+
+#bodyfooterdiv {
+  background-color:#2F2F2F; 
+  height:100px;
+  font-size:10pt;
+  font-family:calibri light;
+  padding-top:1px;
+  border-top-style:solid;
+}
+
+a:link {
+  color:#6CCEFD;
+}
+
+/* visited link */
+a:visited {
+  color:#d79afc;
+}
+
+/* mouse over link */
+a:hover {
+  color:#FC82B5;
+}
+
+/* selected link */
+a:active {
+  color:#9af4fc;
+}
+
+.links {text-align:center;
+ /* border:1px solid; (in case I need it later) */
+  padding: 0px 10px;
+}
+
+.table{text-align:center;
+ border:1px solid;
+ padding: 0px 10px;
+}
