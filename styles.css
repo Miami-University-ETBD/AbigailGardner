@@ -20,10 +20,6 @@ h2 {letter-spacing:5px;
   
 }
 
-h4 {letter-spacing:1px;
-  
-}
-
 p {color:white;
   font-family:calibri light;
   line-height:1.4;
@@ -33,6 +29,7 @@ p {color:white;
 h4 {color:#B68354;
     font-family:calibri light;
     text-decoration:underline;
+    letter-spacing:1px;
 }
 
 #artist {margin:25px 0px 0px;
@@ -61,29 +58,37 @@ ol {list-style-type:upper-roman;
 
 a:link {
   color:#6CCEFD;
+  font-style:italic;
 }
 
 /* visited link */
 a:visited {
   color:#d79afc;
+  font-style:italic;
 }
 
 /* mouse over link */
 a:hover {
   color:#FC82B5;
+  font-style:italic;
 }
 
 /* selected link */
 a:active {
   color:#9af4fc;
+  font-style:italic;
 }
 
 .links {text-align:center;
  /* border:1px solid; (in case I need it later) */
   padding: 0px 10px;
+  font-style:italic;
 }
 
 .table{text-align:center;
  border:1px solid;
  padding: 0px 10px;
+}
+
+th{font-weight:bold;
 }
