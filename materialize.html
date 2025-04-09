@@ -145,7 +145,9 @@
            </div>
        </div>
    </div>
-
+<br>
+<a href="subscribe.html" style="text-align: center; margin-left: 50%;"><h3><u>Subscribe?</u></h3></a>
+<br>
    <div class="carousel">
     <a class="carousel-item" href="#one!"><img src="images/toastmaster_1950.jpg"></a>
     <a class="carousel-item" href="#two!"><img src="images/vintage_toaster_blue.jpg"></a>
@@ -154,18 +156,18 @@
     <a class="carousel-item" href="#five!"><img src="images/toastmaster_1950.jpg"></a>
   </div>
 
-  <ul class="collapsible">
+  <ul class="collapsible" style="background-color: white;">
     <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header"><i class="material-icons">create</i>Writers</div>
+      <div class="collapsible-body"><span>A list of the heads of the writing department.</span></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header"><i class="material-icons">business_center</i>Editors</div>
+      <div class="collapsible-body"><span>A list of the heads of the editing department.</span></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header"><i class="material-icons">camera_alt</i>Photographers</div>
+      <div class="collapsible-body"><span>A list of our star photographers.</span></div>
     </li>
   </ul>
   
@@ -203,7 +205,7 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
+    var instances = M.Collapsible.init(elems);
   });
    </script>
 </body>
