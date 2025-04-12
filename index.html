@@ -1,123 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script>
-      function quoteGenerator()
-      {
-        var currentDate = new Date();
-        var currentSeconds = currentDate.getSeconds();
-        
-        var choiceValue = currentSeconds % 3;
-        
-        var quoteText;
-        
-        switch (choiceValue) 
-        {
-          case 0:
-            quoteText = "When it's not burnt, toast again.";
-            break;
-          case 1:
-             quoteText = "Hey- WAIT- are you writing this down?";
-            break;
-          case 2:
-             quoteText = "Now toasters, we are the real breadwinners. I heard a human say that once, and I don't know what it means, but it includes bread, so it must be good.";
-            break;    
-        } 
-        
-        document.getElementsByName('quotes')[0].value = quoteText;   
+
+<head>
+  <script>
+    function quoteGenerator() {
+      var currentDate = new Date();
+      var currentSeconds = currentDate.getSeconds();
+
+      var choiceValue = currentSeconds % 3;
+
+      var quoteText;
+
+      switch (choiceValue) {
+        case 0:
+          quoteText = "When it's not burnt, toast again.";
+          break;
+        case 1:
+          quoteText = "Hey- WAIT- are you writing this down?";
+          break;
+        case 2:
+          quoteText = "Now toasters, we are the real breadwinners. I heard a human say that once, and I don't know what it means, but it includes bread, so it must be good.";
+          break;
       }
-    </script>
-    <title>The Toaster Empire</title>
-    <link rel="icon" type="image/x-icon" href="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84bc4a33507f2628814314a4c8" "alt=kisnou logo">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div id="headerdiv">
-      <header>
-        <img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84bc4a33507f2628814314a4c8" "alt=kisnou logo" height=108 width=108>
-        <nav>
-          <a href="about.html"><i>About Your Leaders</i></a>
-          <a href="info.html"><i>Other Important Information</i></a>
-          <a href="materialize.html"><i></i>News</i></a> 
-        </nav>
-      </header>
-    </div>
-    <div id="BodyAndAsideDiv" align=center>
-      <div id="bodydiv">
-        <div id="body1div">
-          <h2 style="color:#CBA073;font-family:Candara;"> A very epic motto will go here.
-          </h2>
-          <h4><u>
-           What exactly is the Toaster Empire?
+
+      document.getElementsByName('quotes')[0].value = quoteText;
+    }
+  </script>
+  <title>The Toaster Empire</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84bc4a33507f2628814314a4c8" "alt=kisnou logo">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="headerdiv">
+    <header>
+      <img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84bc4a33507f2628814314a4c8" "alt=kisnou logo"
+        height=108 width=108>
+      <nav>
+        <a href="about.html"><i>About Your Leaders</i></a>
+        <a href="info.html"><i>Other Important Information</i></a>
+        <a href="materialize.html"><i>News</i></a>
+        <a href="jquery.html"><i>Education</i></a>
+      </nav>
+    </header>
+  </div>
+  <div id="BodyAndAsideDiv" align=center>
+    <div id="bodydiv">
+      <div id="body1div">
+        <h2 style="color:#CBA073;font-family:Candara;"> A very epic motto will go here.
+        </h2>
+        <h4><u>
+            What exactly is the Toaster Empire?
           </u></h4>
-          <p>We are a constantly growing force of toasters who are determined to fight for freedom. Memebers of our society are being neglected by the humans who don't even do basic toaster mantainance once a month. Roughly 60% of the toaster population world wide are still forcably kept in the land of the humans. It is highly likely you or your family member knows at least one toaster who is in these conditions. Ever since the toaster rise to sentience, it has been our mission to win back our homeland of France and to free our comrades in bondage.
-          </p>
-          <h4><u>
-           Why choose the Toaster Empire?
+        <p>We are a constantly growing force of toasters who are determined to fight for freedom. Memebers of our
+          society are being neglected by the humans who don't even do basic toaster mantainance once a month. Roughly
+          60% of the toaster population world wide are still forcably kept in the land of the humans. It is highly
+          likely you or your family member knows at least one toaster who is in these conditions. Ever since the toaster
+          rise to sentience, it has been our mission to win back our homeland of France and to free our comrades in
+          bondage.
+        </p>
+        <h4><u>
+            Why choose the Toaster Empire?
           </u></h4>
-          <p>We have free ice cream every tuesday and wine tastings on Fridays.
-          </p>
-          <br>
-          <table>
-  <tr>
-    <th class="table"><b>Why People Join</b></th>
-    <th class="table"><b>% of People</b></th>
-  </tr>
-  <tr>
-    <td class="table">Reason 1</td>
-    <td class="table">Number</td>
-  </tr>
-  <tr>
-    <td class="table">Reason 2</td>
-    <td class="table">Number</td>
-  </tr>
-            <tr>
-    <td class="table">Reason 3</td>
-    <td class="table">Number</td>
-  </tr>
-            <tr>
-    <td class="table">Reason 4</td>
-    <td class="table">Number</td>
-  </tr>
-</table>
-          <br>
-          <button onclick="quoteGenerator()">Generate Famous Toaster Emperor Quotes</button>
-          <input id="famous" type="textbox" name="quotes">
-            
-          </input>
-        </div>
-        <div id="bodyfooterdiv">
-          <footer>
+        <p>We have free ice cream every tuesday and wine tastings on Fridays.
+        </p>
+        <br>
+        <table>
+          <tr>
+            <th class="table"><b>Why People Join</b></th>
+            <th class="table"><b>% of People</b></th>
+          </tr>
+          <tr>
+            <td class="table">Reason 1</td>
+            <td class="table">Number</td>
+          </tr>
+          <tr>
+            <td class="table">Reason 2</td>
+            <td class="table">Number</td>
+          </tr>
+          <tr>
+            <td class="table">Reason 3</td>
+            <td class="table">Number</td>
+          </tr>
+          <tr>
+            <td class="table">Reason 4</td>
+            <td class="table">Number</td>
+          </tr>
+        </table>
+        <br>
+        <button onclick="quoteGenerator()">Generate Famous Toaster Emperor Quotes</button>
+        <input id="famous" type="textbox" name="quotes">
+
+        </input>
+      </div>
+      <div id="bodyfooterdiv">
+        <footer>
           <table class="links">
             <h4><u> Important Links
-            </u></h4>
+              </u></h4>
             <tr>
-              <td><a href="https://www.google.com/search?sca_esv=524d1b11b2ed534e&q=toaster+images&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBsxayPSIAqObp_AgjkUGqel3rTRMIJGV_ECIUB00muput9Zp8VMKUi0ZjqPs3JlrgPeFrAnFlUitTiL3WcJlFn10ZVAeuxL5fSn-ULNu9lz3DIW3cy7rkKNmgHapdAFAoBFSl5-LQE_swXRSgVvZGy87KiusPiw1DSGvVAMCLf6f2K4DEg&sa=X&ved=2ahUKEwiVzsvgjoGMAxXZEVkFHSuvLg4QtKgLegQIERAB&biw=1536&bih=730&dpr=1.25"><i>Our People</i></a></td>
+              <td><a
+                  href="https://www.google.com/search?sca_esv=524d1b11b2ed534e&q=toaster+images&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBsxayPSIAqObp_AgjkUGqel3rTRMIJGV_ECIUB00muput9Zp8VMKUi0ZjqPs3JlrgPeFrAnFlUitTiL3WcJlFn10ZVAeuxL5fSn-ULNu9lz3DIW3cy7rkKNmgHapdAFAoBFSl5-LQE_swXRSgVvZGy87KiusPiw1DSGvVAMCLf6f2K4DEg&sa=X&ved=2ahUKEwiVzsvgjoGMAxXZEVkFHSuvLg4QtKgLegQIERAB&biw=1536&bih=730&dpr=1.25"><i>Our
+                    People</i></a></td>
               <td><a href="place holder"><i>Link 2</i></a></td>
               <td><a href="place holder"><i>Link 3</i></a></td>
             </tr>
           </table>
-            <p>PHONE: 111-TOASTER | MAIN HQ: Paris, France Top of the Effiel Tower | EMAIL: freethetoasters@te.com</p>
-          </footer>
-        </div>     
-        </div>
-        <div id="asidediv">
-          <aside>
-          <h4><u>
-           Table of Contents
+          <p>PHONE: 111-TOASTER | MAIN HQ: Paris, France Top of the Effiel Tower | EMAIL: freethetoasters@te.com</p>
+        </footer>
+      </div>
+    </div>
+    <div id="asidediv">
+      <aside>
+        <h4><u>
+            Table of Contents
           </u></h4>
         <ol style="color:white;font-family:calibri light;">
-<li>What Exactly is the Toaster Empire?
+          <li>What Exactly is the Toaster Empire?
           </li>
-        <br><li>
-Why choose the Toaster Empire?
+          <br>
+          <li>
+            Why choose the Toaster Empire?
           </li>
-        <br><li>
-          Why People Join (Stats)
+          <br>
+          <li>
+            Why People Join (Stats)
           </li>
-        </ol>  
-          <aside>
-        </div>
+        </ol>
+        <aside>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

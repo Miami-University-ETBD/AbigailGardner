@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Toaster Empire Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <nav>
+        <a href="index.html"><i>Homepage</i></a>
+        <a href="about.html"><i>About Your Leaders</i></a>
+        <a href="info.html"><i>Other Important Information</i></a>
+        <a href="materialize.html"><i>News</i></a>
+    </nav>
+</header>
+
+<body>
+    <!-- JQuery Interaction 1 -->
+    <section style="background-color:rgb(98, 98, 98);">
+        <h1>Young Toaster Education</h1>
+        <img src="images/book_cover.png" height="200px" width="200px" id="book">
+        <p id="book_description">A historical and legendary tale written with young readers in mind. It tells the tail
+            of our most great Emperor and his heroic journey to start our revolution and found this very empire! (Can be found at any of our main estabilishments in the "little toasters" section)</p>
+        <script>
+            $("#book_description").hide();
+            $("#book").mouseenter(function () {
+                $("#book_description").show();
+            });
+
+            $("#book").mouseleave(function () {
+
+                $("#book_description").hide();
+
+            });
+        </script>
+    </section>
+
+    <!-- JQuery Interaction 2 -->
+    <section style="background-color: rgb(175, 99, 48);">
+        <div id="benefits">
+            <h1>
+                Member Benefits
+            </h1>
+            <h5>
+                (click to see details)
+            </h5>
+        </div>
+        <div id="perks" style="display: none;">
+            <ul>
+                <li>Monthly book clubs.</li>
+                <li>Four fun and educational field trips throughout the year.</li>
+                <li>Daycare discounts up to 20% off</li>
+            </ul>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $("#benefits").click(function () {
+                    $("#perks").slideToggle("slow");
+                });
+            });
+        </script>
+    </section>
+
+    <!-- JQuery Interaction 3 -->
+    <section style="background-color: rgb(47, 47, 47);">
+        <h1>Toaster Youth Innovation Center</h1>
+<p>
+    Our innovation center is accessible to toasters ages 13-17 with adult supervision and toasters over the age of 18 are welcome as scheduled. Training is required to operate the machines without employee assitance. Appointments for training or usage can be scheduled. There are also creative group labs for different age groups available throughout the year.
+</p>
+<h4 id="click_innovation">
+    Click to view!
+</h4>
+        <img src="images/innovation.jpg" style="display: none;" id="innovation_center">
+
+        <script>
+$(document).ready(function () {
+                $("#click_innovation").click(function () {
+                    $("#innovation_center").fadeIn();
+                });
+            });
+        </script>
+    </section>
+</body>
+
+</html>
