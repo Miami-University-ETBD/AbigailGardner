@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Subscribe</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <style>
+     .header-bg {
+           background-color:#2F2F2F; /* Light pink background */
+       }
+   </style>
+</head>
+<body>
+ <!-- Navbar -->
+ <nav class="header-bg">
+  <div class="nav-wrapper">
+<ul>
+<li><a href="index.html">Homepage</a></li>
+<li> <a href="about.html">About Your Leaders</a></li>
+<li> <a href="info.html">Important Information</a></li>
+<li> <a href="materialize.html">News</a></li>         
+      </ul>
+  </div>
+</div>
+</nav>
+
+    <!-- Email Feedback Section -->
+   <div id="feedback-section" class="section container">
+    <h2>Subscribe for Updates</h2>
+    <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+    </form>
+    <div id="email-response"></div>
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Check Your email-response</h4>
+    <p id="modal-content-text"></p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+      >Close</a
+    >
+  </div>
+</div>
+    <script>
+        // Initialize modal
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+ 
+        // Function to handle email subscription form submission
+        function submitEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+            document.getElementById('email').value = ''; // Clear the input
+ 
+ 
+            // Display modal
+            const modalText = document.getElementById('modal-content-text');
+            modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+            const modal = M.Modal.getInstance(document.getElementById('modal1'));
+            modal.open();
+        }
+    </script>
+ 
+</body>
+</html>
