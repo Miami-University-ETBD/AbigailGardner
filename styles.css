@@ -108,7 +108,8 @@ font-weight:bold;
 */
 
 #famous {
-  width: 600px;
+  width: 880px;
+  height: 20px;
   word-wrap: break-word;
 }
 
