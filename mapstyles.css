@@ -1,56 +1,77 @@
-body
-{
-  background-color:black;
+body {
+  background-color: black;
 }
 
-.hide
-{
-  background-color:gray;
-  border-radius:5px;
-  text-align:center;
-  position:absolute;
+.hide {
+  background-color: gray;
+  border-radius: 6px;
+  text-align: center;
+  position: absolute;
   margin: 0 auto;
-  
+
 }
 
-.text-scotland
-{
-  top:4%;
-  left:43%;
+.text-scotland {
+  top: 12.5%;
+  left: 43%;
 }
 
-.text-newzealand
-{
-  top:74%;
-  left:67.8%;
+.text-newzealand {
+  top: 78.5%;
+  left: 67.8%;
 }
 
-.text-antarctica
-{
-  top:99%;
-  left:73.5%;
+.text-antarctica {
+  top: 106%;
+  left: 73.5%;
 }
 
-.text-madagascar
-{
-  top:63.3%;
-  left:33%;
+.text-madagascar {
+  top: 66%;
+  left: 33%;
 }
 
-.text-france
-{
-  top:7%;
-  left:44.1%;
+.text-france {
+  top: 18%;
+  left: 44.1%;
 }
 
-.text-washington
-{
-  top:11.5%;
-  left:22.4%;
+.text-washington {
+  top: 24%;
+  left: 22.4%;
 }
 
-.text-brazil
-{
-  top:66%;
-  left:10%;
+.text-brazil {
+  top: 69.5%;
+  left: 10%;
+}
+
+a:link {
+  color: #6CCEFD;
+  /* font-style:italic; */
+}
+
+/* visited link */
+a:visited {
+  color: #d79afc;
+  /* font-style:italic; */
+}
+
+/* mouse over link */
+a:hover {
+  color: #FC82B5;
+  /* font-style:italic; */
+}
+
+/* selected link */
+a:active {
+  color: #9af4fc;
+  font-style: italic;
+}
+
+.links {
+  text-align: center;
+  /* border:1px solid; (in case I need it later) */
+  padding: 0px 10px;
+  font-style: italic;
 }

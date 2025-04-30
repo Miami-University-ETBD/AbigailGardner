@@ -1,81 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>The Toaster Empire | Map</title>
-        <link rel="icon" type="image/x-icon" href="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84bc4a33507f2628814314a4c8" "alt=kisnou logo">
-        <link rel="stylesheet" href="mapstyles.css">
-    </head>
-      <body>
-        <div id="headerdiv">
-          <header>
+
+<head>
+    <title>The Toaster Empire | Map</title>
+    <link rel="stylesheet" href="mapstyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="headerdiv" style="font-family: Candara;">
+        <header>
             <nav>
-              <a href="index.html"><i>Homepage</i></a>
-              <a href="about.html"><i>About Your Leaders</i></a>
-              <a href="materialize.html"><i></i>News</i></a> 
+                <a href="index.html">Homepage</a>
+                <a href="about.html">About Your Leaders</a>
+                <a href="info.html">Important Information</a>
+                <a href="jquery.html">Education</a>
+                <a href="bootstrap.html">Organization & Fundraising</a>
             </nav>
-          </header>
-          <div class="text-scotland hide">
+        </header>
+        <div class="text-scotland hide" style="display: none;">
             <h3>
               Welcome to Edinburgh, Scotland
             </h3>
             <p>
               Birth place of toaster kind.
             </p>
-          </div>
-          
-          <div class="text-newzealand hide">
+        </div>
+
+        <div class="text-newzealand hide" style="display: none;">
             <h3>
               Welcome to Wellington, New Zealand
             </h3>
             <p>
               Kiwi alliance.
             </p>
-          </div>
-          <div class="text-antarctica hide">
+        </div>
+        <div class="text-antarctica hide" style="display: none;">
             <h3>
               Welcome to McMurdo Station, Antarctica
             </h3>
             <p>
               Penguin alliance.
             </p>
-          </div>
-          <div class="text-madagascar hide">
+        </div>
+        <div class="text-madagascar hide" style="display: none;">
             <h3>
               Welcome to Antananarivo, Madagascar
             </h3>
             <p>
               Lemur alliance.
             </p>
-          </div>
-          <div class="text-france hide">
+        </div>
+        <div class="text-france hide" style="display: none;">
             <h3>
               Welcome to Paris, France  </h3>
             <p>
               Main HQ.
             </p>
-          </div>
-          <div class="text-washington hide">
+        </div>
+        <div class="text-washington hide" style="display: none;">
             <h3>
               Welcome to Washington, D.C.
             </h3>
             <p>
               Largest spy group.
             </p>
-          </div>
-          <div class="text-brazil hide">
+        </div>
+        <div class="text-brazil hide" style="display: none;">
             <h3>
               Welcome to Rio de Janeiro, Brazil
             </h3>
             <p>
               Favorite vacation spot.
             </p>
-          </div>
-          
-          
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               width="100%" viewBox="0 0 2363 1266" enable-background="new 0 0 2363 1266" xml:space="preserve">
-          <path fill="#80C7F1" opacity="1.000000" stroke="none" 
-              d="
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $(".marker-scotland").click(function () {
+                    $(".text-scotland").toggle();
+                });
+            });
+
+            $(document).ready(function () {
+                $(".marker-newzealand").click(function () {
+                    $(".text-newzealand").toggle();
+                });
+            });
+
+            $(document).ready(function () {
+                $(".marker-antarctica").click(function () {
+                    $(".text-antarctica").toggle();
+                });
+            });
+
+            $(document).ready(function () {
+                $(".marker-madagascar").click(function () {
+                    $(".text-madagascar").toggle();
+                });
+            });
+
+            $(document).ready(function () {
+                $(".marker-france").click(function () {
+                    $(".text-france").toggle();
+                });
+            });
+
+            $(document).ready(function () {
+                $(".marker-washington").click(function () {
+                    $(".text-washington").toggle();
+                });
+            });
+
+            $(document).ready(function () {
+                $(".marker-brazil").click(function () {
+                    $(".text-brazil").toggle();
+                });
+            });
+
+        </script>
+
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="100%" viewBox="0 0 2363 1266" enable-background="new 0 0 2363 1266"
+            xml:space="preserve">
+            <path fill="#80C7F1" opacity="1.000000" stroke="none" d="
           M426.000000,1267.000000 
               C284.342926,1267.000000 142.685837,1267.000000 1.021564,1267.000000 
               C1.014376,845.038147 1.014376,423.076263 1.014376,1.057199 
@@ -10018,9 +10066,8 @@
               C434.871704,78.454063 433.366180,77.939018 432.126740,77.665741 
               C429.882538,77.170937 427.569519,76.988487 425.285217,76.675636 
               C425.703888,78.725830 426.122559,80.776016 426.986267,83.380264 
-          z"/>
-          <path class="marker=newzealand" fill="#F02F0E" opacity="1.000000" stroke="none" 
-              d="
+          z" />
+            <path class="marker-newzealand" fill="#F02F0E" opacity="1.000000" stroke="none" d="
           M2121.868652,904.937256 
               C2121.398438,905.679993 2120.928467,906.422668 2120.049805,907.577637 
               C2118.081055,910.220764 2116.520508,912.451599 2114.643555,915.135376 
